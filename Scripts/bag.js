@@ -88,9 +88,9 @@ function generateItemHTML(item) {
       <div class="company">${item.company}</div>
       <div class="item-name">${item.item_name}</div>
       <div class="price-container">
-        <span class="current-price">Rs ${item.current_price}</span>
-        <span class="original-price">Rs ${item.original_price}</span>
-        <span class="discount-percentage">(${item.discount_percentage}% OFF)</span>
+        <span class="CurrentPrice">Rs ${item.current_price}</span>
+        <span class="Orignalprice">Rs ${item.original_price}</span>
+        <span class="Discount">(${item.discount_percentage}% OFF)</span>
       </div>
       <div class="return-period">
         <span class="return-period-days">${item.return_period} days</span> return available
@@ -103,4 +103,5 @@ function generateItemHTML(item) {
 
     <div class="remove-from-cart" onclick="removeFromBag(${item.id})">X</div>
   </div>`;
+//   This is a finally;
 }
